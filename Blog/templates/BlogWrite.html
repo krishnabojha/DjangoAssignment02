@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My blog</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" 
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+         crossorigin="anonymous">
+    </head>
+    <body>
+        <div style="width: 100%; padding-left: 10%;">
+            <h1 style="color: grey;">Write your Blog</h1><br>
+            <form method="POST" style="width: 80%;">
+                {% csrf_token %}
+                <div class="form-group">
+                  <label for="blogtitle">Blog Title : </label>
+                  <input type="text" class="form-control" id="blogTitleId" name="title" placeholder="eg . Best place to visit in nepal" value="{{blog.title}}">
+                </div>
+                <div class="form-group">
+                    <label for="blogauthor">Author : </label>
+                    <input type="text" class="form-control" id="blogauthorId" name="authorname" placeholder="eg . Ram bahadur oli, Binod magar" value="{{blog.author}}">
+                  </div>
+                <div class="form-group">
+                    <label for="blogarea">Write you blog here : </label>
+                    <textarea class="form-control" id="blogareaId" rows="3" name="blogarea" placeholder=" eg. Kathmandu, pokhara and Janakpur etc are ...( Write in paragraph form)" >{{blog.description}}</textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+    </body>
+</html>

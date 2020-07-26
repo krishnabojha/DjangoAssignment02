@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static%}
+<html>
+    <head>
+        <title>Reading</title>
+        <style>
+            *{
+                margin: 0;
+            }
+            body{
+                background-image: url("{% static 'Images/imgp.jpg'%}");
+                background-attachment: fixed;
+                background-size: cover;
+
+            }
+            /* blog show container */
+            .readbox{
+                width: 80%;
+                background-color: rgb(58, 52, 52);
+                color: white;
+                padding: 2%;
+                margin-top: 2%;
+                overflow-y: auto;
+                text-align: center;
+                margin-left: 8%;
+            }
+        </style>
+    </head>
+    <body>
+            <div class="readbox">
+                <h1 style="font-size: 40px;">{{item.title}}</h1>
+                <h3 style="font-size: 25px;">{{item.author}}</h3><br>
+                <p style="font-size: 20px;">{{item.description}}</p>
+            </div>
+    </body>
+</html>

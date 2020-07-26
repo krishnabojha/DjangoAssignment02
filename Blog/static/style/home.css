@@ -1,0 +1,121 @@
+ *{
+    margin: 0;
+}
+body{
+    background-image: url('../Images/wallpape.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+/* profile, settings, logout list show */
+.col-4{
+    float: right;
+    display: none;
+    width: 5%;
+
+}
+/* style of my contribution  */
+.contribution{
+    margin-left: 550px;
+}
+/* style to profile image */
+.pro-img{
+    width: 50px; 
+    height: 40px; 
+    margin-left: 120px; 
+    border-radius: 20px;
+}
+/* style of wallpaprer div */
+.home{
+    position: absolute;
+    width: 1249px;
+    height: 500px;
+    padding: 50px;
+    text-align: center;
+}
+.home p{
+    font-size: 50px;
+}
+
+div h1{
+    font-size: 80px;
+}
+.company{
+    color: red;
+    font-size: 70px;
+}
+
+.blogbtn{
+    width: 15%;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 50px 5px;
+    background: transparent;
+}
+
+.blogbtn:hover{
+    background-color: rgb(62, 183, 231);
+    color: white;
+} 
+/* about us slide animation page */
+ .aboutuscard{
+    display: none;
+    background-color: white;
+    position: absolute;
+    width: 250px;
+    animation-name: slide;
+    animation-duration: 3s;
+    border: 1px solid rgb(53, 50, 50);
+    height: 400px;
+    margin: 10% 77%;
+    box-shadow: 5px 5px 5px #888888;
+}
+@keyframes slide{
+    0% {margin: 10% 100%;}
+    100% {margin: 10% 77%;}
+} 
+ .aboutuscard img{
+    width: 250px;
+}
+.card-title{
+    padding: 5px 0px;
+    font-size: 25px;
+    font-family: Georgia;
+    margin: 1%;
+}
+.desc{
+    height: 90px;
+    overflow: hidden;
+    margin-bottom: 20px
+    
+}
+.card-text{
+    font-size: 20px;
+    font-family: Georgia;
+    margin:1% ;
+    padding-bottom: 20px;
+}
+.aboutmore{
+    width: 55%;
+    height: 35px;
+    border-radius: 50px;
+    margin-left:20px ;
+    text-align: center;
+    color: rgb(41, 168, 241);
+}
+.aboutmore a{
+    font-size: 20px;
+    text-decoration: none;
+}
+.aboutmore:hover{
+    background-color: rgb(41, 168, 241);
+}
+.aboutmore a:hover{
+    color: white;
+}
+
+.btn{
+    width: 140px;
+    height: 60px;
+}
